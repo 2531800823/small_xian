@@ -5,7 +5,7 @@ const state = () => {
     return {
         // 用户信息
         profile: {
-            id: '11',
+            id: '',
             avatar: '',
             nickname: '',
             account: '',
