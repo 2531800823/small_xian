@@ -6,7 +6,7 @@
   <header>头部路由</header>
 
   <!-- 内容区 -->
-  <main>
+  <main class="aaa">
     <!-- 二级路由 -->
     <RouterView />
   </main>
@@ -19,5 +19,10 @@
 export default {};
 </script>
 
-<style>
+<style lang="less" scoped>
+// .hoverShadow ();
+// @import "../assets/style/mixins.less";
+.aaa {
+  .hoverShadow ();
+}
 </style>
