@@ -1,0 +1,34 @@
+// less 混入
+
+// // 演示
+
+// .abc {
+//     width: 100px;
+//     height: 100px;
+// }
+
+// .box {
+//     // 混入 到了 .box 里面 但是不是调用 是有重新生成的代码
+//     .abc();
+// }
+
+// .abc2() {
+//     width: 100px;
+//     height: 100px;
+// }
+
+// .box2 {
+//     // 调用 不生成 
+//     .abc2()
+// }
+
+
+// 鼠标经过上移阴影动画
+.hoverShadow () {
+    transition: all .5s;
+
+    &:hover {
+        transform: translate3d(0, -3px, 0);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+}
